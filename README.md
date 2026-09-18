@@ -34,6 +34,15 @@ VS Code → Git → GitHub → Vercel
 
 ## Weekly Review – Week 3
 
+### example.html (Bootstrap Album 참고 예제)
+
+Bootstrap 공식 Album 예제(`getbootstrap.com/docs/5.3/examples/album`)를 로컬로 가져와, 카드 3개의 `<svg>` placeholder 이미지를 `<img src="cj1.jpg">` / `cj2.jpg` / `cj3.jpg` 실제 이미지로 교체해 실습용으로 활용함. 레이아웃 구조(navbar, hero 섹션, `row row-cols-*` 카드 그리드, footer)와 다크 테마 토글(`data-bs-theme`) 등은 원본 예제를 그대로 유지하고, 이미지 삽입 방식만 커스터마이징함.
+
+- **목적**: Bootstrap 그리드 시스템(`row-cols-1 row-cols-sm-2 row-cols-md-3`)과 카드 컴포넌트 구조를 익히기 위한 참고/연습용 예제
+
+- **수정 내용**: `<svg class="bd-placeholder-img">` placeholder → `<img src="cjN.jpg" class="bd-placeholder-img card-img-top" style="height:225px; object-fit:cover; width:100%;">`로 교체
+- **위치**: 실제 과제 페이지(index/add/view/edit)와는 별개로, 디자인 참고용 예제 파일로 보관
+
 ### Service Topic
 음악 플레이리스트 CRUD 프론트엔드 서비스. 곡 목록 조회, 추가, 상세보기, 수정 기능을 서버/DB 없이 JS 배열(`data.js`)과 URL 쿼리스트링만으로 구현함.
 
